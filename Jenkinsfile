@@ -9,7 +9,7 @@ pipeline{
      stages{
         stage("Git Clone"){
             steps{
-               git branch: "main" url: "https://github.com/sachinMicro/maven-web-app.git" 
+               git branch: "main" , url: "https://github.com/sachinMicro/maven-web-app.git" 
             }
         }
         stage("Maven Build"){
